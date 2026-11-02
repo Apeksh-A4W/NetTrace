@@ -1,17 +1,48 @@
-# nettrace
+# NetTrace — Internet Outage Detection
 
-A new Flutter project.
+## About the Project
+NetTrace is a crowdsourced network monitoring application designed to help users identify areas experiencing weak internet connectivity or possible network outages.
 
-## Getting Started
+The application aims to collect network measurements and location-based reports, analyze network conditions, and visualize possible connectivity problems on a map.
 
-This project is a starting point for a Flutter application.
+## Objectives
+- Detect internet connectivity problems.
+- Monitor network quality and reachability.
+- Collect location-based reports with user permission.
+- Identify areas with weak connectivity or possible outages.
+- Visualize reported network conditions on a map.
 
-A few resources to get you started if this is your first Flutter project:
+## Project Structure
+- `mobile/` — Flutter mobile application.
+- `backend/` — Backend services.
+- `database/` — Database schema and related files.
+- `docs/` — Project documentation.
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+## Technology Stack
+- **Mobile:** Flutter and Dart
+- **Backend:** Java Spring Boot (planned)
+- **Database:** PostgreSQL with PostGIS (planned)
+- **Network analysis:** Python and FastAPI (planned)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Current Features
+- Flutter mobile application interface.
+- Device location retrieval with permission.
+- Location details screen.
+- Speed test interface with demonstration values.
+- Map interface with demonstration network-status data.
+
+**Note:** Some network measurements, speed results, and map statuses are currently demonstration data. Real-time network detection and outage analysis are planned improvements.
+
+## Planned Improvements
+- Detect Wi-Fi and mobile network connectivity.
+- Check whether the internet is reachable.
+- Measure actual network performance.
+- Collect user-submitted network reports.
+- Aggregate reports to identify possible outage areas.
+- Integrate the mobile app with the backend and database.
+
+## Project Status
+NetTrace is under active development as a collaborative student project.
+
+## Disclaimer
+A connectivity report may indicate an internet access problem, but it does not independently confirm a failure in a specific cell tower or network infrastructure component.
